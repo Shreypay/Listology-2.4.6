@@ -10,6 +10,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
+            System.out.println("\nPress Enter to continue...");
+            scanner.nextLine();
+            refreshScreen();
             System.out.println("\nTask Manager Menu:");
             System.out.println("1. Add Task");
             System.out.println("2. Complete Task");
@@ -137,8 +140,11 @@ public class Main {
         }
         System.out.println("Data updated for today's date: " + currentDate);
     }
+
+    public static void refreshScreen() {
+        System.out.println("\033[H\033[2J");
+    }
 }
 
 
 // TODO: make entire screen refresh after each command
-
