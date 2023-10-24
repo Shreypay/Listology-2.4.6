@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Main {
+public class Listology {
     public static void main(String[] args) {
         ArrayList<ArrayList<Object>> taskList = new ArrayList<>();
 
@@ -73,7 +73,7 @@ public class Main {
         }
     }
 
-    public static void addTask(ArrayList<ArrayList<Object> > taskList, String name, String dueDate) {
+    public static void addTask(ArrayList<ArrayList<Object>> taskList, String name, String dueDate) {
         ArrayList<Object> task = new ArrayList<>();
         task.add(name);
         task.add(false);
